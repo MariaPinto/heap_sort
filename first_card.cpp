@@ -5,6 +5,19 @@ using namespace std;
 
 int heap_size = 0;
 
+//Size
+
+int size(int A[])
+{
+	int c=0;
+	for (int i=0;i<N;i++)
+	{
+		c++;
+	}
+	return c;
+}
+
+
 //Parent
 int parent (int A[], int i)
 {
