@@ -53,7 +53,7 @@ void Heap_Increase_key(int A[N], int i, int key)
 void Heap_Sort(int A[N])
 {
 	build_max_heap(A);
-	for(int i = N; i >=0; i-=2)
+	for(int i = N; i >=1; i--)
 	{
 		swap(A[1], A[i]);
 		heap_size--;
