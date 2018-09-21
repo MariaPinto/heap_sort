@@ -8,7 +8,7 @@ int heap_size = 0;
 //Parent
 int parent (int A[], int i)
 {
-	if(i==1) return NULL;
+	if(i==1) return -1;
 	return floor (i/2);
 }
 
@@ -17,7 +17,7 @@ int parent (int A[], int i)
 int left(int A[],int i)
 {
 	if(2*i <= N) return (2*i);
-	return NULL;
+	return -1;
 }
 
 //Right
@@ -25,7 +25,7 @@ int left(int A[],int i)
 int right (int A[],int i)
 {
 	if(2*i+1 <= N) return (2*i+1);
-	return NULL;
+	return -1;
 }
 
 
