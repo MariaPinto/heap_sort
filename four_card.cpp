@@ -4,13 +4,6 @@
 #define N=10
 #define INF=111111111111111
 
-int main()
-{
-  std::string name;
-  std::cout << "What is your name? ";
-  getline (std::cin, name);
-  std::cout << "Hello, " << name << "!\n";
-}
 
 int Heap_Extract_Max(int A[]){
     int max=A[1];
