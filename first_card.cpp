@@ -1,20 +1,22 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 #define N 5
 
+int heap_size = 0;
 
 //Parent
 int parent (int A[], int i)
 {
 	if(i==1) return NULL;
-	return (i/2);
+	return floor (i/2);
 }
 
 //Left
 
 int left(int A[],int i)
 {
-	if(2*i <= N) return 2*i;
+	if(2*i <= N) return (2*i);
 	return NULL;
 }
 
