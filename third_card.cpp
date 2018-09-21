@@ -32,7 +32,7 @@ void swap(int &a, int &b)
 	a = b;
 	b = temp;
 }
-void Heap_Increase_key(int A[N], int i, int key)
+void Heap_Increase_key(int A[], int i, int key)
 {
 	if(key < A[i])
 	{
@@ -50,7 +50,7 @@ void Heap_Increase_key(int A[N], int i, int key)
 	
 }
 
-void Heap_Sort(int A[N])
+void Heap_Sort(int A[])
 {
 	build_max_heap(A);
 	for(int i = N; i >=1; i--)
